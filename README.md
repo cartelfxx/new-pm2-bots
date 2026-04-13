@@ -1,6 +1,5 @@
 <p align="center">
-  <h1 align="center">🤖 Discord Bot Paketi</h1>
-  <p align="center">PM2 üzerinde çalışan, çok botlu Discord sunucu yönetim sistemi — <b>Satılık</b></p>
+  <h1 align="center">Discord Bot Paketi — Satılık</h1>
   <p align="center">
     <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black" />
     <img src="https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white" />
@@ -12,120 +11,88 @@
 
 ---
 
-> Uzun süre aktif olarak geliştirdiğim ve kendi sunucumda kullandığım bot paketini satışa çıkarıyorum.
-> Sistem eksiksiz çalışır durumda teslim edilir.
->
-> ⚠️ Adıma açılan sahte hesaplara inanmayın. Tek iletişim kanalım: **Discord → `cartelfx`**
+Uzun süredir geliştirdiğim ve aktif olarak kullandığım bot paketini satışa çıkarıyorum. Sistem eksiksiz çalışır durumda teslim edilir.
+
+**İletişim → Discord:** `cartelfx`
 
 ---
 
-## ✨ Özellikler
+## Nedir?
 
-| | |
-|---|---|
-| ⚙️ **Tamamen Özelleştirilebilir** | Rol, kanal ve tüm sistem ayarları sunucunuza göre yapılandırılır |
-| ⚡ **230+ Komut** | Moderasyon, istatistik, ekonomi, kayıt, görev ve çok daha fazlası |
-| 🎨 **Modern Arayüz** | Tüm komutlar Discord Components V2 ile Container + Section tabanlı |
-| 🛡️ **PM2 Destekli** | 5 ayrı bot process, otomatik yeniden başlatma ve log yönetimi |
-| 🗄️ **MongoDB** | Tüm veriler kalıcı olarak saklanır, veri kaybı yaşanmaz |
+5 ayrı bot process'inden oluşan, PM2 üzerinde çalışan bir Discord sunucu yönetim sistemi. Moderasyon'dan ekonomiye, güvenlikten istatistiğe kadar bir sunucunun ihtiyaç duyabileceği her şey tek pakette.
 
 ---
 
-## 🤖 Bot Yapısı
+## Bot Yapısı
 
-| Bot | Görev |
-|-----|-------|
-| **Moderator** | Moderasyon, kayıt, ceza sistemi, yetkili yönetimi, paneller |
-| **Countery** | Sunucu kurulumu, bot yönetimi, ayarlar, senkronizasyon |
-| **Point** | İstatistik takibi, sıralama, görev sistemi, level sistemi |
+| Bot | Sorumluluk |
+|-----|-----------|
+| **Moderator** | Kayıt, ceza, yetkili yönetimi, paneller, moderasyon komutları |
+| **Countery** | Sunucu kurulumu, bot yönetimi, senkronizasyon araçları |
+| **Point** | İstatistik, sıralama, görev sistemi, level sistemi |
+| **Guardian** | Anti-raid, sunucu koruma, whitelist, denetim |
 | **Invite** | Davet takibi ve istatistikleri |
-| **Guardian** | Sunucu koruma, anti-raid, yedekleme |
 
 ---
 
-## 📸 Bot Görüntüleri
+## Öne Çıkan Sistemler
 
-### ⚙️ Kurulum & Ayarlar
+**Moderasyon & Yönetim**
+- Kayıt sistemi (isim, cinsiyet, yaş kontrolü)
+- Ceza sistemi — mute, ban, jail, warn, slave, underworld
+- Ceza itiraz paneli — üye itiraz eder, yönetim onaylar, kabul edilirse otomatik kaldırılır
+- Yetkili yönetimi — terfi, tenzil, blok, geçmiş
+- Sicil komutu — tüm ceza geçmişi sayfalı panel ile
 
-| Setup Paneli | Setup — Ayarlar | Setup — Log |
-|:---:|:---:|:---:|
-| ![](images/setup.png) | ![](images/setup2.png) | ![](images/setup3.png) |
+**Görev & Puan Sistemi**
+- Rol bazlı görev atama (ses, mesaj, kayıt, davet, taglı, yetkili çekme)
+- AI destekli görev zorluk hesaplama
+- Görev tamamlama takibi ve otomatik ödül
+- Yetkili puan sistemi — günlük, haftalık, toplam
 
-| Setup — Emoji | Setup — Sistem | Setup — Rooter |
-|:---:|:---:|:---:|
-| ![](images/setup4.png) | ![](images/setup5.png) | ![](images/rooter.png) |
+**İstatistik & Analiz**
+- Ses, mesaj, yayın, kamera istatistikleri
+- Haftalık/aylık/tüm zamanlar filtreleme
+- Yetkili analiz raporu — trend göstergesi, AI bulgular
+- İki yetkili karşılaştırma paneli
+- Level sistemi — mesaj XP ve ses XP ayrı ayrı
 
-| Setup — Yasaklı Tag | Setup — Özel Komut 1 | Setup — Özel Komut 2 |
-|:---:|:---:|:---:|
-| ![](images/yasaktag.png) | ![](images/ozelkomut1.png) | ![](images/ozelkomut2.png) |
+**Senkronizasyon Araçları**
+- Yetki senkronizasyon — rolü olan ama DB kaydı olmayan üyeleri tespit et ve düzelt
+- Tutarsızlık tarama — 4 kategoride sistem sağlık kontrolü, tek tıkla toplu düzeltme
+- İstatistik aktarma — bir üyenin tüm verisini başka bir üyeye taşı
 
----
+**Paneller**
+- Sorun çözme merkezi — sıra sistemi, özel oda, değerlendirme
+- Terapi sistemi — terapist çağırma, seans yönetimi, değerlendirme
+- Loca özel oda — altın ile kiralama, süre uzatma, üye yönetimi
+- Özel oda sistemi — ücretsiz, sahiplik devri, kilitleme
+- Kamera rolü, streamer başvuru, şüpheli hesap kontrolü, ceza itiraz
 
-### 🤖 Bot Yönetimi
+**Guardian — Sunucu Koruma**
+- Anti-raid, anti-spam, kanal/rol yedekleme
+- Whitelist sistemi
+- Denetim paneli ve ceza yönetimi
 
-| Bot Yönetim Paneli | Bot Düzenleme |
-|:---:|:---:|
-| ![](images/botyonetim.png) | ![](images/botyonetim2.png) |
-
----
-
-### 🎯 Görev Sistemi
-
-| Görev Paneli | Görev Detay |
-|:---:|:---:|
-| ![](images/task.png) | ![](images/task2.png) |
-
----
-
-### 🎧 Sorun Çözme Merkezi
-
-| Panel | Talep Oluştur | Uzman Görünümü |
-|:---:|:---:|:---:|
-| ![](images/sorun.png) | ![](images/sorun2.png) | ![](images/sorun3.png) |
-
-| Oturum | Değerlendirme | Geçmiş |
-|:---:|:---:|:---:|
-| ![](images/sorun4.png) | ![](images/sorun5.png) | ![](images/sorun6.png) |
-
-| Kötüye Kullanım |
-|:---:|
-| ![](images/sorun7.png) |
+**Kurulum & Yönetim**
+- Setup paneli — tüm ayarlar tek yerden, rol/kanal seçici
+- Log kurulumu — 35+ log kanalı otomatik oluşturma
+- Emoji kurulumu — sistem emojileri otomatik yükleme
+- Rooter yönetimi, yasaklı tag, özel komutlar
 
 ---
 
-### ⚖️ Ceza İtiraz Sistemi
+## Teknik Detaylar
 
-| İtiraz Paneli | İtiraz Detay |
-|:---:|:---:|
-| ![](images/itiraz.png) | ![](images/itiraz2.png) |
-
----
-
-### 🏠 Loca Özel Oda Sistemi
-
-| Loca Paneli | Loca Yönetim |
-|:---:|:---:|
-| ![](images/loca.png) | ![](images/loca2.png) |
+- **Discord.js v14** — Components V2, Container, Section, Thumbnail
+- **MongoDB + Mongoose** — Tüm veriler kalıcı
+- **PM2** — Process yönetimi, otomatik restart, log dosyaları
+- **Node.js v22**
+- Tüm arayüzler modern Container/Section tabanlı, embed kullanılmıyor
 
 ---
 
-### 🔄 Yetki & Senkronizasyon
-
-| Yetki Senkronizasyon | Yetki Sistemi | Tutarsızlık Tarama |
-|:---:|:---:|:---:|
-| ![](images/ysenk.png) | ![](images/yetkisys.png) | ![](images/tutarsizlik.png) |
-
----
-
-### 🛡️ Güvenlik
-
-| Şüpheli Hesap Kontrolü |
-|:---:|
-| ![](images/susp.png) |
-
----
-
-## 🔧 Kurulum Gereksinimleri
+## Kurulum Gereksinimleri
 
 <details>
 <summary>Gerekli yazılımları görmek için tıklayın</summary>
@@ -142,8 +109,100 @@
 
 ---
 
-## 📬 İletişim
+## Ekran Görüntüleri
 
-Satın alma ve sorularınız için Discord üzerinden ulaşabilirsiniz.
+### Kurulum & Ayarlar
+
+| Setup Paneli | Ayarlar | Log Kurulumu |
+|:---:|:---:|:---:|
+| ![](images/setup.png) | ![](images/setup2.png) | ![](images/setup3.png) |
+
+| Emoji Kurulumu | Sistem Yönetimi | Rooter |
+|:---:|:---:|:---:|
+| ![](images/setup4.png) | ![](images/setup5.png) | ![](images/rooter.png) |
+
+| Yasaklı Tag | Özel Komut | Özel Komut 2 |
+|:---:|:---:|:---:|
+| ![](images/yasaktag.png) | ![](images/ozelkomut1.png) | ![](images/ozelkomut2.png) |
+
+---
+
+### Bot Yönetimi
+
+| Bot Paneli | Bot Düzenleme |
+|:---:|:---:|
+| ![](images/botyonetim.png) | ![](images/botyonetim2.png) |
+
+---
+
+### Görev Sistemi
+
+| Görev Paneli | Görev Detay |
+|:---:|:---:|
+| ![](images/task.png) | ![](images/task2.png) |
+
+---
+
+### Sorun Çözme Merkezi
+
+| Panel | Talep | Uzman |
+|:---:|:---:|:---:|
+| ![](images/sorun.png) | ![](images/sorun2.png) | ![](images/sorun3.png) |
+
+| Oturum | Değerlendirme | Geçmiş |
+|:---:|:---:|:---:|
+| ![](images/sorun4.png) | ![](images/sorun5.png) | ![](images/sorun6.png) |
+
+| İhlal Raporu |
+|:---:|
+| ![](images/sorun7.png) |
+
+---
+
+### Ceza İtiraz Sistemi
+
+| İtiraz Paneli | İtiraz Detay |
+|:---:|:---:|
+| ![](images/itiraz.png) | ![](images/itiraz2.png) |
+
+---
+
+### Loca Özel Oda
+
+| Loca Paneli | Loca Yönetim |
+|:---:|:---:|
+| ![](images/loca.png) | ![](images/loca2.png) |
+
+---
+
+### Yetki & Senkronizasyon
+
+| Yetki Senkronizasyon | Yetki Sistemi | Tutarsızlık Tarama |
+|:---:|:---:|:---:|
+| ![](images/ysenk.png) | ![](images/yetkisys.png) | ![](images/tutarsizlik.png) |
+
+---
+
+### Guardian — Sunucu Koruma
+
+| Ana Panel | Ayarlar |
+|:---:|:---:|
+| ![](images/guard.png) | ![](images/guard-ayarlar.png) |
+
+| Ceza Sistemi | Denetim | Whitelist |
+|:---:|:---:|:---:|
+| ![](images/guard-cezalar.png) | ![](images/guard-denetim.png) | ![](images/guard-wl.png) |
+
+---
+
+### Güvenlik
+
+| Şüpheli Hesap Kontrolü |
+|:---:|
+| ![](images/susp.png) |
+
+---
+
+## İletişim
 
 **Discord:** `cartelfx`
