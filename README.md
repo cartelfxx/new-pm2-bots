@@ -7,9 +7,7 @@
 
 ## Hakkında
 
-Uzun süre aktif olarak geliştirdiğim ve kendi sunucumda kullandığım bot paketini satışa çıkarıyorum. Discord'u bıraktığım için artık aktif geliştirme yapmıyorum. Sistem eksiksiz çalışır durumda teslim edilir.
-
-Adıma açılan sahte hesaplara inanmayın. Tek iletişim kanalım aşağıda belirtilmiştir.
+Uzun süre aktif olarak geliştirdiğim ve kendi sunucumda kullandığım bot paketini satışa çıkarıyorum. Sistem eksiksiz çalışır durumda teslim edilir.
 
 **İletişim:** Discord — `cartelfx`
 
