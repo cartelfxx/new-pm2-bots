@@ -175,6 +175,10 @@ Uzun süredir geliştirdiğim ve aktif olarak kullandığım bot paketini satı�
 
 ---
 
+| Sicil | Cezalar | Ceza Detay |
+|:---:|:---:|:---:|
+| ![](images/sicil.png) | ![](images/sicil2.png) | ![](images/sicil3.png) |
+
 ### Loca Özel Oda
 
 | Loca Paneli | Loca Yönetim |
