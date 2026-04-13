@@ -170,7 +170,7 @@ Uzun süredir geliştirdiğim ve aktif olarak kullandığım bot paketini satı�
 ### İstatistik Aktarma Sistemi(all)
 
 | Ana Panel | Önizleme |
-|:---:|:---:|:---:|
+|:---:|:---:|
 | ![](images/stataktar.png) | ![](images/stataktar-onizleme.png) |
 
 ---
